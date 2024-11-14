@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gianella Gonzales Falcon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Paleta de colores */
+        :root {
+            --color-fondo: #FFFAFA; /* Snow */
+            --color-primario: #FFB6C1; /* LightPink */
+            --color-secundario: #FF69B4; /* HotPink */
+            --color-terciario: #E6E6FA; /* Lavender */
+            --color-texto: #2b2b2b; /* Gris oscuro */
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--color-secundario);
+            color: var(--color-texto);
+            transition: background-color 0.3s ease;
+        }
+
+        header:hover {
+            background-color: var(--color-primario);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin: 0;
+            color: var(--color-texto);
+            animation: fadeIn 1s ease;
+        }
+
+        h2 {
+            color: var(--color-primario);
+            font-size: 2rem;
+            border-bottom: 2px solid var(--color-primario);
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .about, .experience {
+            margin: 2rem;
+            padding: 2rem;
+            border-radius: 10px;
+            background-color: var(--color-terciario);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .about:hover, .experience:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .experience ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .experience li {
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+            position: relative;
+            padding-left: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .experience li::before {
+            content: '•';
+            color: var(--color-primario);
+            position: absolute;
+            left: 0;
+            transition: transform 0.3s ease;
+        }
+
+        .experience li:hover::before {
+            transform: scale(1.2);
+            color: var(--color-secundario);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 1rem;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--color-secundario);
+            color: var(--color-texto);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .social-icons a {
+            margin: 0 1rem;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+            filter: brightness(1.2);
+        }
+
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gianella Gonzales Falcon</h1>
+        <p>Estudiante de Administración de negocios, de la rama de Marketing</p>
+    </header>
+    
+    <section class="about">
+        <h2>Sobre Mí</h2>
+        <p>Soy Gianella Gonzales Falcon, una estudiante apasionada en el área de marketing, innovación y comunicación. Actualmente me desarrollo en marketing digital, redes sociales, y estrategias de comunicación.</p>
+        <img src="WhatsApp Image 2024-11-12 at 5.43.03 AM.jpeg" alt="Foto de Gianella Gonzales Falcon">
+    </section>
+
+    <section class="experience">
+        <h2>Experiencia</h2>
+        <ul>
+            <li>Marketing digital en redes sociales</li>
+            <li>Creación de Marcas</li>
+            <li>Desarrollo de estrategias de comunicación</li>
+            <li>Gestión de campañas publicitarias</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Conéctate conmigo en redes sociales</p>
+        <div class="social-icons">
+            <a href="#" title="Instagram"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#" title="TikTok"><img src="tiktok-icon.png" alt="TikTok"></a>
+        </div>
+    </footer>
+</body>
+</html>
